@@ -3,15 +3,11 @@
   :license "Apache"
   :serial t
   :depends-on (:alexandria
-               :drakma
-               :st-json
-               :do-urlencode
-               :log4cl
+               :lunamech-matrix-api
                :ironclad
-               ;; UI
                :mcclim)
   :components ((:module "src"
                 :serial t
                 :components ((:file "package")
                              (:file "util")
-                             (:file "matrix")))))
+                             (:file "channel-frame")))))
