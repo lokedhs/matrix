@@ -1,7 +1,12 @@
 (defpackage :matrix
   (:use :cl)
   (:documentation "Matrix client library for Common Lisp")
-  (:export))
+  (:export #:make-connection-queue
+           #:stop-connection
+           #:start-connection
+           #:connection-queue/connection
+           #:load-connection
+           #:save-connection))
 
 (defpackage :matrix.ui
   (:use :cl)
